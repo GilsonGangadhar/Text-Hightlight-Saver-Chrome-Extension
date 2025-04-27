@@ -1,0 +1,29 @@
+.highlight-saver-popup {
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  z-index: 999999;
+  display: none;
+}
+
+.highlight-saver-popup button {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.highlight-saver-popup button:hover {
+  background-color: #3367d6;
+}
+
+.highlight-saved {
+  background-color: rgba(255, 255, 0, 0.3);
+}
