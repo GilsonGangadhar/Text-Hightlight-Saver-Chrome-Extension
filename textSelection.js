@@ -1,3 +1,4 @@
+// Handle text selection and highlight saving
 let selectionPopup = null;
 let currentSelection = "";
 let currentUrl = "";
@@ -18,7 +19,7 @@ function createSelectionPopup() {
   document.body.appendChild(selectionPopup);
 }
 
-// position near selected textArea
+// Position pop near selected text
 function showPopup(x, y) {
   if (!selectionPopup) createSelectionPopup();
 
@@ -50,7 +51,7 @@ function saveHighlight() {
     const highlights = data.highlights;
     highlights.push(highlight);
     chrome.storage.local.set({ highlights: highlights }, () => {
-      // console.log("Highlight saved, highlight");
+      console.log("Highlight saved");
       hidePopup();
     });
   });
